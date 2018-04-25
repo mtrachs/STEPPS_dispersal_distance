@@ -3,7 +3,7 @@ library(ggplot2)
 library(fields, quietly=TRUE)
 library(abind)
 
-setwd('~/stepps_nd_experiments/')
+setwd('~/stepps_dispersal_distance_experiments/')
 wd = getwd()
 
 #####################################################################################
@@ -48,10 +48,11 @@ file.list <- list.files(path_data)
 
 for(experiment in file.list) {
 
-suff_add <- matrix(ncol=2,unlist(strsplit(file.list,'gamma')),byrow=TRUE)[,2]
+suff_add <- matrix(ncol=2,unlist(strsplit(file.list,'gamma_')),byrow=TRUE)[,2]
 suff_add <- unlist(strsplit(suff_add,'.csv'))
 suff_fit = run$suff_fit
-suff_fit <- paste(suff_fit,suff_add[experiment==file.list],sep='')
+suff_fit <- paste(suff_fit,'_',suff_add[experiment==file.list],sep='')
+dispersal_dist <- as.numeric(strsplit(suff_add[experiment==file.list],'km')) 
 # make a new suff fit
   
 path_figs1 = sprintf('%s/%s', path_figs, suff_fit)
@@ -62,6 +63,7 @@ if (!file.exists(path_figs1)){
 #load(sprintf('%s/cal_data_%s.rdata', path_data, suff_dat))
 load('~/workflow_stepps_calibration/calibration/data/elicitation_neus_certainty_median_79_sites_only_abies.RData')
 taxa <- colnames(y)
+d_pot <- d_pot[d_pot[,1]<=(dispersal_dist/10^3),]
 
 fname = paste(path_data,experiment,sep='')#sprintf('%s/%s.csv', path_out, suff_fit)
 fit <- read_stan_csv(fname)

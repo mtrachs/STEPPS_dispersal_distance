@@ -1,4 +1,4 @@
-setwd('~/stepps_nd_experiments/')
+setwd('~/stepps_dispersal_distance_experiments/')
 
 g = list(suff_fit  = 'cal_g_', 
              suff_dat = '12taxa_mid_comp_ALL_v0.2',

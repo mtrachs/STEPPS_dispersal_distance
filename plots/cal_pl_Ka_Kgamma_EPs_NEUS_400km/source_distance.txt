@@ -1,12 +1,12 @@
 
 [1] "50% source distance"
            Ash          Beech          Birch       Chestnut            Elm        Hemlock        Hickory          Maple 
-           312            248            280            172            320            144            264            308 
+           204            168            184            124            208            108            180            200 
            Oak  Other conifer Other hardwood           Pine         Poplar         Spruce       Tamarack 
-           104            296            368            356            260            224            252 
+            80            192            228            224            176            156            172 
 
 [1] "90% source distance"
            Ash          Beech          Birch       Chestnut            Elm        Hemlock        Hickory          Maple 
-           612            588            604            544            616            524            588            612 
+           360            348            356            328            360            316            348            360 
            Oak  Other conifer Other hardwood           Pine         Poplar         Spruce       Tamarack 
-           492            608            632            628            588            572            588 
+           300            356            368            364            348            340            348 
