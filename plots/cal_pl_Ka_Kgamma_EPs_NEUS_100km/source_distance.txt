@@ -1,0 +1,12 @@
+
+[1] "50% source distance"
+           Ash          Beech          Birch       Chestnut            Elm        Hemlock        Hickory          Maple 
+           392            364            336            372            392            360            404            380 
+           Oak  Other conifer Other hardwood           Pine         Poplar         Spruce       Tamarack 
+           384            372            348            404            396            392            376 
+
+[1] "90% source distance"
+           Ash          Beech          Birch       Chestnut            Elm        Hemlock        Hickory          Maple 
+           640            632            628            636            640            632            640            636 
+           Oak  Other conifer Other hardwood           Pine         Poplar         Spruce       Tamarack 
+           636            636            632            640            640            640            636 
